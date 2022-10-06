@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Lint') {
       steps {
-        sh 'npm run lint --silent'
+        sh 'npm run lint --fix --silent'
       }
     }
     stage('Test') {
